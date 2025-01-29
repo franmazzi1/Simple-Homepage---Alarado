@@ -53,6 +53,9 @@ nav{
 .tabs a:hover{
     color: black ;
 }
+.tabs .actual-page a:hover{
+    color: #223344 ;
+}
 #toggle-mode {
     position: relative;
     padding: 5px;
@@ -150,18 +153,27 @@ main{
     font-family: 'Poppins';
     font-size: 1.125rem;
     font-weight: 600;
+    cursor: pointer;
+    border-radius: 16px;
 }
+
 .buttons button:nth-child(1){
     color: #F2F9FE;
     background-color: #2A4DD0;
-    border-radius: 16px;
     text-transform: uppercase;
+}
+.buttons button:nth-child(1):hover{
+    color: #F2F9FEdd;
+    background-color: #2A2cc0;
 }
 .buttons button:nth-child(2){
     color: #2A4DD0;
     text-decoration: underline;
     text-decoration-thickness: 3px;
     text-underline-offset: 5px;
+}
+.buttons button:nth-child(2):hover{
+    color: #2A1cb0;
 }
 .no-required{
     margin: 50px 0;
@@ -230,6 +242,13 @@ body.dark-mode .tabs .actual-page a{
 }
 body.dark-mode .first-sect .buttons button:nth-child(2){
     color: #FFFFFF;
+}
+body.dark-mode .tabs .actual-page a:hover{
+    color: #2A4DD0;
+}
+
+body.dark-mode .buttons button:nth-child(2):hover{
+    color: #d2d9dE;
 }
 
 
